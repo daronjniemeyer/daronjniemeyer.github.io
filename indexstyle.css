@@ -1,0 +1,72 @@
+body {
+    background: url("./img/matrix_rain.gif");
+    background-size: cover;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Open Sans";
+    font-size: 22pt;
+}
+
+sub {
+    font-family: "Open Sans";
+    font-size: 14pt;
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 10pt;
+}
+
+.BoxHeading sub {
+    text-align: right;
+    margin-left: 3cm;
+}
+
+.BoxHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.CenterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.Box {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-color: beige;
+    background-color: rgb(128, 128, 128, 0.2);
+    word-wrap: break-word;
+    word-break: break-all;
+    max-height: 70%;
+}
+.BoxAtImage {
+    color: white;
+    font-family: "Open Sans";
+}
+
+.BoxLinks {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.BoxLinks img {
+    image-rendering: optimizeQuality;
+    height: 1cm;
+}
