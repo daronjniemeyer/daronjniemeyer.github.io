@@ -1,6 +1,9 @@
 body {
-    background: url("./img/matrix_rain.gif");
+    background: url("./img/matrix_rain.gif") no-repeat center center fixed;
     background-size: cover;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: white;
 }
 
 a {
@@ -13,23 +16,34 @@ a:hover {
 }
 
 h1 {
-    font-family: "Open Sans";
     font-size: 22pt;
+    margin-bottom: 0;
 }
 
 sub {
-    font-family: "Open Sans";
     font-size: 14pt;
 }
 
 p {
-    font-family: "Open Sans";
     font-size: 10pt;
 }
 
-.BoxHeading sub {
-    text-align: right;
-    margin-left: 3cm;
+.CenterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Box {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border: 1px solid beige;
+    background-color: rgba(128, 128, 128, 0.2);
+    word-wrap: break-word;
+    max-width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .BoxHeading {
@@ -39,34 +53,50 @@ p {
     margin-bottom: 10px;
 }
 
-.CenterBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: white;
-}
-
-.Box {
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    border-color: beige;
-    background-color: rgb(128, 128, 128, 0.2);
-    word-wrap: break-word;
-    word-break: break-all;
-    max-height: 70%;
-}
-.BoxAtImage {
-    color: white;
-    font-family: "Open Sans";
+.BoxHeading sub {
+    text-align: right;
+    margin-left: 20px;
 }
 
 .BoxLinks {
-    display:flex;
-    justify-content:space-evenly;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .BoxLinks img {
-    image-rendering: optimizeQuality;
     height: 1cm;
+    margin: 5px;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18pt;
+    }
+
+    sub {
+        font-size: 12pt;
+    }
+
+    p {
+        font-size: 9pt;
+    }
+
+    .Box {
+        padding: 15px;
+    }
+
+    .BoxHeading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .BoxHeading sub {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .BoxLinks img {
+        height: 0.8cm;
+    }
