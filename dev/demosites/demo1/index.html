@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daron J. Niemeyer | Example Page 1</title>
+        <link rel="stylesheet" href="indexstyle.css" />
+    </head>
+    <body>
+        <div class="Firstpage">
+            <div class="hero-content">
+                <h1>Lorem Ipsum</h1>
+                <p>Sit Amet, Consectetur Adipiscing Elit</p>
+                <a href="#slabLeft" class="cta-button">Learn More</a>
+            </div>
+        </div>
+        <div id="slabLeft" class="SlabLeft">
+            <div class="slab-content">
+                <h2>Inspiring Creativity</h2>
+                <p>
+                    Fusce vehicula dolor arcu, sit amet blandit dolor mollis
+                    nec. Donec viverra eleifend lacus, vitae ullamcorper metus.
+                </p>
+                <img
+                    src="https://picsum.photos/400/300?random=1"
+                    alt="Random Image 1"
+                />
+            </div>
+        </div>
+        <div class="SlabRight">
+            <div class="slab-content">
+                <h2>Innovative Design</h2>
+                <p>
+                    Suspendisse potenti. Sed egestas, ante et vulputate
+                    volutpat, eros pede semper est, vitae luctus metus libero eu
+                    augue.
+                </p>
+                <img
+                    src="https://picsum.photos/400/300?random=2"
+                    alt="Random Image 2"
+                />
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024, Daron J. Niemeyer.</p>
+        </footer>
+
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    document
+                        .querySelector(this.getAttribute("href"))
+                        .scrollIntoView({
+                            behavior: "smooth",
+                        });
+                });
+            });
+        </script>
+    </body>
+</html>
