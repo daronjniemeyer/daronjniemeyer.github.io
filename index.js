@@ -5,7 +5,7 @@
  * @param {string} text - The text to be typed out.
  * @param {number} speed - The typing speed in milliseconds per character. Default is 50ms.
  */
-function typeWriter(elementId, text, speed = 300) {
+function typeWriter(elementId, text, speed = 40) {
   // Get the target element
   const element = document.getElementById(elementId);
 
